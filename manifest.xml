@@ -86,7 +86,6 @@ Must access content hosted on https
               </Group>
             </CustomTab>
           </ExtensionPoint>
-        </DesktopFormFactor>
       </Host>
     </Hosts>
   </VersionOverrides>
