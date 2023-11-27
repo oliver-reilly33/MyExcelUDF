@@ -33,7 +33,7 @@ Must access content hosted on https
   <Description DefaultValue="This is the description."/>
   
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://www.wikipedia.org/" />
+    <SourceLocation DefaultValue="https://oliver-reilly33.github.io/MyExcelUDF/taskpane/taskpane.html" />
   </DefaultSettings>
 
   <!-- [Restricted | ReadDocument | ReadAllDocument | WriteDocument | ReadWriteDocument] -->
@@ -51,15 +51,15 @@ Must access content hosted on https
 
 
 <!-- Not Rrequired: Taskpane -->
-  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
-    <Hosts>
+  <!-- <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts> -->
     <!-- Can have different settings for multiple hosts. -->
-      <Host xsi:type="Workbook">
+      <!-- <Host xsi:type="Workbook"> -->
           <!-- Modifying the ribbon -->
-          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+          <!-- <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <CustomTab DefaultValue="Olivers New Tab">
               <Group DefaultValue="Dodgy Commands">
-                <Label DefaultValue="Label"/>
+                <Label DefaultValue="Label"/> -->
                 <!--
                 <Icon>
                   <bt:Image size="16" resid="Icon.16x16"/>
@@ -83,11 +83,12 @@ Must access content hosted on https
                   </Action>
                 </Control>
                 -->
-              </Group>
+              <!-- </Group>
             </CustomTab>
           </ExtensionPoint>
       </Host>
     </Hosts>
-  </VersionOverrides>
+  </VersionOverrides> -->
+
 
 </OfficeApp>
