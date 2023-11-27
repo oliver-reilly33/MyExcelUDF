@@ -84,7 +84,7 @@ Must access content hosted on https
                 </Control>
                 -->
               </Group>
-            </OfficeTab>
+            </CustomTab>
           </ExtensionPoint>
         </DesktopFormFactor>
       </Host>
