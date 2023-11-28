@@ -1,0 +1,256 @@
+<!-- Ordered Layout: -->
+<OfficeApp xsi:type="TaskPaneApp">
+    <Id></ID>    <!-- (required) -->
+    <AlternateID></AlternateID>
+    <Version></Version>    <!-- (required) -->
+    <ProviderName></ProviderName>    <!-- (required) -->
+    <DefaultLocale></DefaultLocale>    <!-- (required) -->
+    <DisplayName>        <!-- (required) -->
+        <Override></Override>
+    </DisplayName>
+    <Description>        <!-- (required) -->
+        <Override></Override>
+    </Description>
+    <IconUrl>
+        <Override></Override>
+    </IconUrl>
+    <HighResolutionIconUrl>
+        <Override></Override>
+    </HighResolutionIconUrl>
+    <SupportUrl></SupportUrl>    <!-- (required) -->
+    <AppDomains>
+        <AppDomain></AppDomain>
+    </AppDomains>
+    <Hosts>        <!-- (required) -->
+        <Host></Host>        <!-- (required) -->
+    </Hosts>
+    <Requirements>        <!-- (required) -->
+        <Sets>            <!-- (required) -->
+            <Set></Set>            <!-- (required) -->
+        </Sets>
+        <Methods>
+            <Method></Method>
+        </Methods>
+    </Requirements>
+    <DefaultSettings>        <!-- (required) -->
+        <SourceLocation>            <!-- (required) -->
+            <Override></Override>
+        </SourceLocation>
+    </DefaultSettings>
+    <Permissions></Permissions>    <!-- (required) -->
+    <Dictionary>
+        <TargetDialects></TargetDialects>
+        <QueryUri></QueryUri>
+        <CitationText></CitationText>
+        <DictionaryName></DictionaryName>
+        <DictionaryHomePage></DictionaryHomePage>
+    </Dictionary>
+
+    <!-- Section not requied, but has required features if implemented -->
+    <VersionOverrides>
+        <Description></Description>
+        <Requirements>
+            <Sets>
+                <Set></Set>
+            </Sets>
+        </Requirements>
+        <Hosts>            <!-- (required)-->
+            <Host>                <!-- (required + xsi:type)-->
+                <Runtimes>
+                    <Runtime></Runtime>
+                </Runtimes>
+                <AllFormFactors>
+                    <ExtensionPoint>
+                        <Script>
+                            <SourceLocation></SourceLocation>
+                        </Script>
+                        <Page>
+                            <SourceLocation></SourceLocation>
+                        </Page>
+                        <Metadata>
+                            <SourceLocation></SourceLocation>
+                        </Metadata>
+                        <Namespace></Namespace>
+                    </ExtensionPoint>
+                </AllFormFactors>
+                <DesktopFormFactor>                    <!-- (required)-->
+                    <GetStarted>
+                        <Title></Title>
+                        <Description></Description>
+                        <LearnMoreUrl></LearnMoreUrl>
+                    </GetStarted>
+                    <FunctionFile></FunctionFile>
+                    <ExtensionPoint>                        <!-- (required + xsi:type)-->
+                        <!-- You must choose a single tab type -->
+                        <OfficeTab>                            <!-- (required + id)-->
+                            <Group>                                <!-- (required + id)-->
+                                <Label></Label>                                <!-- (required)-->
+                                <Icon>                                    <!-- (required)-->
+                                    <Image></Image>                                    <!-- (required)-->
+                                </Icon>
+                                <Control>
+                                    <Label></Label>
+                                    <Supertip>
+                                        <Title></Title>
+                                        <Description></Description>
+                                    </Supertip>
+                                    <Icon>
+                                        <Image></Image>
+                                    </Icon>
+                                    <Action>
+                                        <TaskpaneId></TaskpaneId>
+                                        <SourceLocation></SourceLocation>
+                                        <Title></Title>
+                                        <FunctionName></FunctionName>
+                                    </Action>
+                                    <Enabled></Enabled>
+                                    <Items>
+                                        <Item></Item>
+                                        <Label></Label>
+                                        <Supertip>
+                                            <Title></Title>
+                                            <Description></Description>
+                                        </Supertip>
+                                        <Action>
+                                            <TaskpaneId></TaskpaneId>
+                                            <SourceLocation></SourceLocation>
+                                            <Title></Title>
+                                            <FunctionName></FunctionName>
+                                        </Action>
+                                    </Items>
+                                </Control>
+                            </Group>
+                        </OfficeTab>
+                        <CustomTab>
+                            <Group>                                <!-- (can be below <ControlGroup>) -->
+                                <OverriddenByRibbonApi></OverriddenByRibbonApi>
+                                <Label></Label>
+                                <Icon>
+                                    <Image></Image>
+                                </Icon>
+                                <Control>
+                                    <OverriddenByRibbonApi></OverriddenByRibbonApi>
+                                    <Label></Label>
+                                    <Supertip>
+                                        <Title></Title>
+                                        <Description></Description>
+                                    </Supertip>
+                                    <Icon>
+                                        <Image></Image>
+                                    </Icon>
+                                    <Action>
+                                        <TaskpaneId></TaskpaneId>
+                                        <SourceLocation></SourceLocation>
+                                        <Title></Title>
+                                        <FunctionName></FunctionName>
+                                    </Action>
+                                    <Enabled></Enabled>
+                                    <Items>
+                                        <Item>
+                                            <OverriddenByRibbonApi></OverriddenByRibbonApi>
+                                            <Label></Label>
+                                            <Supertip>
+                                                <Title></Title>
+                                                <Description></Description>
+                                            </Supertip>
+                                            <Action>
+                                                <TaskpaneId></TaskpaneId>
+                                                <SourceLocation></SourceLocation>
+                                                <Title></Title>
+                                                <FunctionName></FunctionName>
+                                            </Action>
+                                        </Item>
+                                    </Items>
+                                </Control>
+                            </Group>
+                            <ControlGroup></ControlGroup>                            <!-- (can be above <Group>) -->
+                            <Label></Label>
+                            <InsertAfter></InsertAfter>                            <!-- (or <InsertBefore>) -->
+                        </CustomTab>
+                        <OfficeMenu>
+                            <Control>
+                                <Label></Label>
+                                <Supertip>
+                                    <Title></Title>
+                                    <Description></Description>
+                                </Supertip>
+                                <Icon>
+                                    <Image></Image>
+                                </Icon>
+                                <Action>
+                                    <TaskpaneId></TaskpaneId>
+                                    <SourceLocation></SourceLocation>
+                                    <Title></Title>
+                                    <FunctionName></FunctionName>
+                                </Action>
+                                <Enabled></Enabled>
+                                <Items>
+                                    <Item>
+                                        <Label></Label>
+                                        <Supertip>
+                                            <Title></Title>
+                                            <Description></Description>
+                                        </Supertip>
+                                        <Icon>
+                                            <Image></Image>
+                                        </Icon>
+                                        <Action>
+                                            <TaskpaneId></TaskpaneId>
+                                            <SourceLocation></SourceLocation>
+                                            <Title></Title>
+                                            <FunctionName></FunctionName>
+                                        </Action>
+                                    </Item>
+                                </Items>
+                            </Control>
+                        </OfficeMenu>
+                    </ExtensionPoint>
+                </DesktopFormFactor>
+            </Host>
+            <Resources>                <!-- (required)-->
+                <Images>
+                    <Image>
+                        <Override></Override>
+                    </Image>
+                </Images>
+                <Urls>
+                    <Url>
+                        <Override></Override>
+                    </Url>
+                </Urls>
+                <ShortStrings>
+                    <String>
+                        <Override></Override>
+                    </String>
+                </ShortStrings>
+                <LongStrings>
+                    <String>
+                        <Override></Override>
+                    </String>
+                </LongStrings>
+            </Resources>
+            <WebApplicationInfo>
+                <Id></Id>
+                <Resource></Resource>
+                <Scopes>
+                    <Scope></Scope>
+                </Scopes>
+            </WebApplicationInfo>
+            <EquivalentAddins>
+                <EquivalentAddin>
+                    <ProgId></ProgId>
+                    <DisplayName></DisplayName>
+                    <FileName></FileName>
+                    <Type></Type>
+                </EquivalentAddin>
+            </EquivalentAddins>
+        </Hosts>
+    </VersionOverrides>
+    <ExtendedOverrides></ExtendedOverrides>
+</OfficeApp>
+
+
+
+
+
+    
