@@ -47,7 +47,6 @@
         <Runtimes>
           <Runtime resid="Taskpane.Url" lifetime="long"/>
         </Runtimes>
-        <!--
         <AllFormFactors>
           <ExtensionPoint xsi:type="CustomFunctions">
             <Script>
@@ -62,7 +61,6 @@
             <Namespace resid="Functions.Namespace"/>
           </ExtensionPoint>
         </AllFormFactors>
-        -->
         <DesktopFormFactor>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <CustomTab id="CustomTab">
